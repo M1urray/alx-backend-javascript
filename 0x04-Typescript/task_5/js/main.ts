@@ -21,4 +21,6 @@ interface MajorCredits {
       brand: "minor",
     };
   }
+
+  export { MajorCredits, MinorCredits, sumMajorCredits, sumMinorCredits };
     
