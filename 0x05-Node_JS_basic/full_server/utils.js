@@ -26,7 +26,7 @@ function readDatabase(path) {
 
       resolve(fields);
 
-      //   return fields;
+        return fields;
     });
   });
 }
