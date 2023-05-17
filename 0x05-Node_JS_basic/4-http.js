@@ -13,7 +13,7 @@ app.on("request", (_, res) => {
 });
 
 app.listen(port, hostname, () => {
-  process.stdout.write(`Server listening at -> http://${HOST}:${PORT}\n`);
+  process.stdout.write(`Server listening at -> http://${hostname}:${port}\n`);
 });
 
 module.exports = app;
