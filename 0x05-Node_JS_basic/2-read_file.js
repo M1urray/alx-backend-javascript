@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require('fs');
 /**
  * Counts the students in a CSV data file.
  * @param {String} path The path to the CSV data file.
@@ -9,14 +9,14 @@ function countStudents(path) {
   try {
     content = fs.readFileSync(path);
   } catch (err) {
-    throw new Error("Cannot load the database");
+    throw new Error('Cannot load the database');
   }
 
-  content = content.toString().split("\n");
+  content = content.toString().split('\n');
 
   let students = content.filter((item) => item);
 
-  students = students.map((item) => item.split(","));
+  students = students.map((item) => item.split(','));
 
   const NUMBER_OF_STUDENTS = students.length ? students.length - 1 : 0;
   console.log(`Number of students: ${NUMBER_OF_STUDENTS}`);
@@ -36,7 +36,7 @@ function countStudents(path) {
     console.log(
       `Number of students in ${key}: ${fields[key].length}. List: ${fields[
         key
-      ].join(", ")}`
+      ].join(', ')}`
     );
   }
 }
